@@ -14,28 +14,6 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
-	<repositories>
-		<repository>
-			<id>atlassian-public</id>
-			<url>https://packages.atlassian.com/maven/repository/public</url>
-			<snapshots>
-				<enabled>true</enabled>
-				<updatePolicy>never</updatePolicy>
-				<checksumPolicy>warn</checksumPolicy>
-			</snapshots>
-			<releases>
-				<enabled>true</enabled>
-				<checksumPolicy>warn</checksumPolicy>
-			</releases>
-		</repository>
-
-		<repository>
-			<id>mvnrepository</id>
-			<name>mvnrepository</name>
-			<url>http://www.mvnrepository.com</url>
-		</repository>
-	</repositories>
-
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -49,7 +27,7 @@
 			<version>0.5</version>
 			<scope>compile</scope>
 		</dependency>
-				<dependency>
+		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
 			<version>3.15</version>
