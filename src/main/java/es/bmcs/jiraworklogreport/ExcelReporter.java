@@ -11,7 +11,6 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Cell;
@@ -19,7 +18,6 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
-import org.joda.time.DateTime;
 
 public class ExcelReporter {
 	private List<String> fieldNames = new ArrayList<String>();
@@ -171,8 +169,8 @@ public class ExcelReporter {
 						cel.setCellValue((Integer)value);
 					}else if (value instanceof Double) {
 						cel.setCellValue((Double) value);
-					} else if (value instanceof DateTime) {
-						cel.setCellValue(new Date(((DateTime) value).getMillis()));
+					} else if (value instanceof Date) {
+						cel.setCellValue((Date)value);
 					}
 				}
 				columnCount++;

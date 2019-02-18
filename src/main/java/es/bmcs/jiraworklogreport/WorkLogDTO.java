@@ -1,16 +1,16 @@
 package es.bmcs.jiraworklogreport;
 
+import java.util.Date;
 import org.apache.commons.lang.builder.ToStringBuilder;
-import org.joda.time.DateTime;
 
-public class WorkLog {
+public class WorkLogDTO {
 	private String ProjectName;
 	private String IssueKey;
 	private String IssueType;
 	private String Component;
 	private String Department;
 	private String Author;
-	private DateTime StartDate;
+	private Date StartDate;
 	private int MinutesSpent;
 	private int Year;
 	private int Month;
@@ -31,12 +31,12 @@ public class WorkLog {
 		MinutesSpent = i;
 	}
 
-	public DateTime getStartDate() {
+	public Date getStartDate() {
 		return StartDate;
 	}
 
-	public void setStartDate(DateTime dateTime) {
-		StartDate = dateTime;
+	public void setStartDate(Date date) {
+		StartDate = date;
 	}
 
 	public String getAuthor() {
