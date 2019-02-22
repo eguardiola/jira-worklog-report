@@ -1,6 +1,6 @@
 package es.bmcs.jiraworklogreport;
 
-import org.apache.commons.lang.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.joda.time.DateTime;
 
 public class WorkLog {
